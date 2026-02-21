@@ -56,7 +56,24 @@ function playGame() {
     }
 }
 
-playGame();
+function whoWon(){
+    playGame();
+
+    if(humanScore > computerScore) {
+        console.log(`Hurrrah! YOU WON THE GAME!!!
+            FINAL SCORE: YOU: ${humanScore} ----- BOT: ${computerScore}`);
+    }else if (humanScore < computerScore) {
+        console.log(`Alas! YOU LOST BETTER LUCK NEXT TIME!
+            FINAL SCORE: YOU: ${humanScore} ----- BOT: ${computerScore}`);
+    }else {
+        console.log(`Alas! THIS GAME GOT TIED!
+            FINAL SCORE: YOU: ${humanScore} ----- BOT: ${computerScore}`);
+    }
+}
+
+whoWon();
+
+
 
 
 
