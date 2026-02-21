@@ -1,5 +1,3 @@
-console.log("Javascript is connected successfully....");
-
 function getComputerChoice() {
     const choices = ["rock", "scissors", "paper"];
 
@@ -10,7 +8,12 @@ function getComputerChoice() {
 
 
 function getHumanChoice() {
-    const humanChoice = prompt("Rock Paper Scissors shoot...");
+    const humanChoice = prompt(`This is Rock Paper Scissors game: 
+        Rock Paper Scissors shoot: 
+        This game will play for 5 round 
+        and will choose who won the game based
+        on who have more points
+        Check if you can beat this Bot: `);
 
     return humanChoice.toLowerCase().trim();
 }
