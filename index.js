@@ -43,8 +43,20 @@ function playRound(yourChoice, botChoice){
         }
 }
 
-const computerChoice = getComputerChoice();
-const humanChoice = getHumanChoice();
 
-playRound(humanChoice, computerChoice);
+
+
+
+function playGame() {
+    for(let i = 1; i <= 5; i++){
+        const computerChoice = getComputerChoice();
+        const humanChoice = getHumanChoice();
+
+        playRound(humanChoice, computerChoice);
+    }
+}
+
+playGame();
+
+
 
